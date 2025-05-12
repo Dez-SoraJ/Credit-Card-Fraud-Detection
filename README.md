@@ -1,22 +1,52 @@
 # Credit-Card-Fraud-Detection
-For many banks, retaining high profitable customers is the number one business goal. Banking fraud, however, poses a significant threat to this goal for different banks. In terms of substantial financial losses, trust and credibility, this is a concerning issue to both banks and customers alike.
+This project applies machine learning techniques to detect fraudulent credit card transactions. The dataset used is highly imbalanced, reflecting the real-world scenario where frauds are rare compared to legitimate transactions.
 
-In the banking industry, credit card fraud detection using machine learning is not only a trend but a necessity for them to put proactive monitoring and fraud prevention mechanisms in place. Machine learning is helping these institutions to reduce time-consuming manual reviews, costly chargebacks and fees as well as denials of legitimate transactions.
+**Project Structure**
+Credit_Card_Fraud_Detection.ipynb =  Main Jupyter notebook containing data preprocessing, exploratory data analysis (EDA), model training, evaluation, and conclusions.
 
-In this project we will detect fraudulent credit card transactions with the help of Machine learning models.
-We will analyse customer-level data that has been collected and analysed during a research collaboration of Worldline and the Machine Learning Group. 
+**Dataset**
+The dataset is derived from anonymized credit card transactions and contains the following:
+284,807 transactions
+492 fraud cases
+Features: PCA-transformed values (V1 to V28), along with Time, Amount, and Class (target label)
+Class Distribution:
+0 → Non-Fraudulent
+1 → Fraudulent
 
-## Table of Contents
-1. [Importing dependencies](#p1)
-2. [Exploratory data analysis](#p2)
-3. [Splitting the data into train & test data](#p3)
-4. [Model Building](#p4)
-   * [Perform cross validation with RepeatedKFold](#p4-1)
-   * [Perform cross validation with StratifiedKFold](#p4-2)
-   * [RandomOverSampler with StratifiedKFold Cross Validation](#p4-3)
-   * [Oversampling with SMOTE Oversampling](#p4-4)
-   * [Oversampling with ADASYN Oversampling](#p4-5)
-5. [Hyperparameter Tuning](#p5)
-6. [Conclusion](#p6)
+**Processes**
 
-   
+Handling class imbalance using techniques such as undersampling or oversampling
+
+Feature scaling for numerical features
+
+Visualizing class distribution
+
+Correlation analysis
+
+Machine Learning Models:
+
+Logistic Regression
+
+Decision Tree
+
+Random Forest
+
+XGBoost
+
+**Evaluation Metrics**
+Due to the class imbalance, accuracy alone is not a reliable metric. The models are evaluated using:
+
+Confusion Matrix
+
+Precision, Recall, F1-Score
+
+ROC-AUC Curve
+
+**How to Run**
+1, Clone this repository or download the notebook.
+
+2, Install dependencies (e.g., pandas, numpy, scikit-learn, matplotlib, seaborn, xgboost if used).
+
+3, Run the notebook cell by cell using Jupyter or any compatible environment.
+
+4, Save the notebook in any of your pre-existing drives along with the dataset
