@@ -29,6 +29,7 @@ Precision, Recall, F1-Score
 
 ROC-AUC Curve
 
+**Needed to be Installed:**
 >>pip install pandas numpy scikit-learn matplotlib seaborn xgboost
 
 **How to Run**
